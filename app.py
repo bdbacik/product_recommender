@@ -1,8 +1,6 @@
-import mysql.connector
 import json
 from flask import Flask, request, jsonify
 import pandas as pd
-from sqlalchemy import create_engine
 import os
 from os import listdir
 import scipy
@@ -22,8 +20,9 @@ def hello_world():
   return 'Hello, Docker!'
 
 
+#generate predictions for an input user id
 @app.route('/reco', methods=['GET','POST'])
-def get_widgets() :
+def predict() :
   
   #get request data with user id
   content = request.json
@@ -32,7 +31,7 @@ def get_widgets() :
   recos = content_engine.predict(request_id)
   return recos
 
-
+#train the model
 @app.route('/train')
 def train():
 
