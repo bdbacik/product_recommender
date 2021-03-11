@@ -15,6 +15,9 @@ Building any of these models in isolation is fairly straightforward, but deployi
 * Packages: flask, pandas, numpy, sklearn, implicit
 * Dependencies: Docker
 
+## App Architecture
+![app architecture](https://github.com/bdbacik/product_recommender/blob/main/images/app_architecture.png)
+
 ## Deployment 
 In terminal, set current directory to folder with app contents
 > $ cd /path/to/app
