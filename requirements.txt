@@ -1,0 +1,7 @@
+implicit
+Flask
+numpy
+pandas
+scikit-learn
+mysql_connector-python
+sqlalchemy

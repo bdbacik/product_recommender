@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+ web:
+  build:
+   context: .
+  image: bdbacik/ml_models
+  ports:
+  - 5000:5000
+  volumes:
+  - ./:/app
+  - ./data:/data
+  - ./models:/models
+ # - ./take_home.csv:/data
+
+#volumes:
+ # - ./data:/data
+
+  #take_home.csv:
